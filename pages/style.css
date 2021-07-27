@@ -1,0 +1,12 @@
+#container {
+    height: 500px;
+    min-width: 600px;
+    max-width: 1600px;
+    margin: 0 auto; 
+}
+
+
+.center {
+ text-align: center
+}
+
