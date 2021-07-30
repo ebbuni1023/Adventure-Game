@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title"></h1>
+
+<script>
+    const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+document.getElementById("title").innerText = `Looks like you are in ${params['s']}`
+</script>
+</body>
+</html>
