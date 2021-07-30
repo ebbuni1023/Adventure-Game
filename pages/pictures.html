@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure Game Map</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
 </head>
 <body>
@@ -20,12 +20,72 @@
     </nav>
 </header>
 
-<h1 id="title"></h1>
+<form>
+    <input type="text" name="search" placeholder="Search Unsplash..." autocomplete="off">
+  </form>
+  
+  
+  <section class="results">
+  
+    <div class="single-result">
+      <div class="image">
+        <!-- image goes here -->
+      </div>
+      <h2><span class="loading"></span></h2>
+      <p><span class="loading"></span></p>
+    </div>
+    
+      <div class="single-result">
+      <div class="image">
+        <!-- image goes here -->
+      </div>
+      <h2><span class="loading"></span></h2>
+      <p><span class="loading"></span></p>
+    </div>
+    
+      <div class="single-result">
+      <div class="image">
+        <!-- image goes here -->
+      </div>
+      <h2><span class="loading"></span></h2>
+      <p><span class="loading"></span></p>
+    </div>
+    
+      <div class="single-result">
+      <div class="image">
+        <!-- image goes here -->
+      </div>
+      <h2><span class="loading"></span></h2>
+      <p><span class="loading"></span></p>
+    </div>
+    
+      <div class="single-result">
+      <div class="image">
+        <!-- image goes here -->
+      </div>
+      <h2><span class="loading"></span></h2>
+      <p><span class="loading"></span></p>
+    </div>
+    
+      <div class="single-result">
+      <div class="image">
+        <!-- image goes here -->
+      </div>
+      <h2><span class="loading"></span></h2>
+      <p><span class="loading"></span></p>
+    </div>
+    
+  </section>
+  
+  
+
 
 <script>
     const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 document.getElementById("title").innerText = `Looks like you are in ${params['s']}`
 </script>
+<script src="city_state.js"></script>
+
 </body>
 </html>
