@@ -25,13 +25,13 @@ ul{
   justify-content:space-evenly;
 }
 
-a{
+.navbar a{
   text-decoration: none;
   color:black;
   font-size: 25px;
   margin:12px 14px;
 }
-a:hover{
+.navbar a:hover{
   text-decoration:underline;
   color:rgb(246, 225, 101);
   font-size: 28px;
@@ -39,6 +39,11 @@ a:hover{
   transition-duration: 0.5s;
  
 }
+
+a{
+  font-size: 13px;
+}
+
 header::before{
   /* background:url("https://source.unsplash.com/1600x900/?learning,books"); */
   content: "";
