@@ -30,20 +30,21 @@
             lng: -87.6500523
         };
         var markersOnMap = [{
-                placeName: "Chicago",
-                title:"lala",
+                placeName: "georgia aquarium atlanta",
+                title:"Georgia Aquarium is a public aquarium in Atlanta, Georgia, United States. Georgia Aquarium is home to hundreds of species and thousands of animals across its seven major galleries, all of which reside in more than 11 million US gallons (42,000 m3) of fresh and saltwater. It was the largest aquarium in the world from its opening in 2005 until 2012 when it became the third-largest aquarium in the world after the Marine Life Park in Singapore and the Chimelong Ocean Kingdom in China; the Georgia Aquarium remains the largest aquarium in the United States and in the Western Hemisphere.",
+                thumbnail: "https://www.georgiaaquarium.org/",
                 LatLng: [{
-                    lat: 41.850033,
-                    lng: -87.6500523
+                    lat: 33.7575,
+                    lng: -84.3897
                 }]
             },
             {
-                placeName: "Australia (Melbourne)",
+                placeName: "World of Coca-Cola",
                 title:"lala",
 
                 LatLng: [{
-                    lat: 41.748489,
-                    lng: -88.186111
+                    lat: 33.7628,
+                    lng: -84.3928
                 }]
             },
             {
@@ -77,7 +78,7 @@
         function addMarkerInfo() {
             for (var i = 0; i < markersOnMap.length; i++) {
                 var contentString = '<div id="content"><h1>' + markersOnMap[i].placeName +
-                    '<p class="info">'+markersOnMap[i].title+"<p>";
+                    '<p class="info">'+markersOnMap[i].title+"<p>"+"<a href>"+ markersOnMap[i].thumbnail+"</href>";
 
                 const marker = new google.maps.Marker({
                     position: markersOnMap[i].LatLng[0],
@@ -86,7 +87,7 @@
 
                 const infowindow = new google.maps.InfoWindow({
                     content: contentString,
-                    maxWidth: 200
+                    maxWidth: 450
                 });
 
                 marker.addListener('click', function () {
