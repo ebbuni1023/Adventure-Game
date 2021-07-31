@@ -112,4 +112,36 @@ div.single-result h2 {
   font-weight: 700;
 }
 
+.container {
+  display: flex; /* or inline-flex */
+/* justify-content: center; */
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.col {
+  flex-direction: column;
+}
+.col1 {
+  flex-direction: column;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.flex-33 {
+  flex: 33%;
+}
+.flex-66 {
+  flex: 66%;
+}
+.flex-50 {
+  flex: 50%;
+}
+
+
 /* IMAGE */
