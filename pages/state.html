@@ -27,7 +27,7 @@
             <center>
             <div class = "flex col">
             <h1 style="font-size:7vw; color: #ffffff" id="welcome"></h1>
-            <h1 style="font-size:4vw; color: #ffffff" > My name is polo, I will help you by asking some questions</h1>
+            <h1 style="font-size:4vw; color: #ffffff" > My name is Polo, I will help you by asking some questions</h1>
             </div>
          </center>   
         </div>
@@ -50,8 +50,8 @@
             <br/>
             <br/>
             <br/>
-            <button class="button button4">Hotel</button> 
-            <button class="button button4">Tour</button>
+            <button class="button button4" onclick=" location.href = '../pages/hotels.html'">Hotel</button> 
+            <button class="button button4" onclick=" location.href = '../pages/tours.html'">Tour</button>
             <br/>
             <br/>
             <br/>
@@ -60,20 +60,22 @@
         </div>
        </center>
     </div>
+    <!-- <center>
     <div style="background-color: #952f8a; " class = "flex row">
         <img
         src="../pages/money.gif"
         width="60%"
         <center>
             <div class = "flex col">
-            <h3 style="font-size:4vw; color: #ffffff" id="money"></h3>
+            <h3  style="font-size:4vw; color: #ffffff" id="money"></h3>
+            
            
             </div>
          </center>  
       />
     </div>
-   </center>
-   <center>
+   </center> -->
+   <!-- <center>
     <div style="background-color: #e0296e;">
         <img
         src="../pages/plan.gif"
@@ -112,8 +114,9 @@
        
         </div>
      </center>  
-</div>
-</div>
+  />
+</div> -->
+
   <script>
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
@@ -122,7 +125,7 @@
     ).innerText = `Welcome to  ${params["s"]} Airport`;
     document.getElementById(
       "money"
-    ).innerText = `Let me show you some hotels in   ${params["s"]} with best price`;
+    ).innerText = `Let me show you some hotels in   ${params["s"]} with best price.`;
     document.getElementById(
       "walking"
     ).innerText = `Click on Me, I will take you to places you can vist in  ${params["s"]} `;
