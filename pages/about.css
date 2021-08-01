@@ -9,12 +9,13 @@ body {
 	font-family: Arial;
 	font-size: 16px;
 	line-height: 1.5;
-	background-color: #ffffff;
+	background-color: ;
 	color: #333333;
 }
 /* NAV BAR */
 .navbar{
   /* margin:12px 40px; */
+  background-color:#e0296e;
   display: inline-block;
   width: 100%;
   border-bottom: solid 1px rgb(0, 0, 0);
@@ -29,7 +30,7 @@ ul{
 
 .navbar a{
   text-decoration: none;
-  color:black;
+  color:white;
   font-size: 25px;
   margin:12px 14px;
 }
@@ -117,7 +118,7 @@ img {
 }
 
 .about figure {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 15px;
   margin: 30px auto;
 }
