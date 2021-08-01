@@ -50,8 +50,8 @@
             <br/>
             <br/>
             <br/>
-            <button class="button button4" onclick=" location.href = '../pages/hotels.html'">Hotel</button> 
-            <button class="button button4" onclick=" location.href = '../pages/tours.html'">Tour</button>
+            <button class="button button4" onclick=" touchOnClick('../pages/hotels.html')">Hotel</button> 
+            <button class="button button4" onclick="touchOnClick('../pages/tours.html') ">Tour</button>
             <br/>
             <br/>
             <br/>
@@ -129,6 +129,11 @@
     document.getElementById(
       "walking"
     ).innerText = `Click on Me, I will take you to places you can vist in  ${params["s"]} `;
+
+
+    function touchOnClick(url) {
+        location.href = `${url}?s=${params["s"]}`;  
+    }
   </script>
     
   </body>
