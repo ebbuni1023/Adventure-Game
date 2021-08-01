@@ -2,15 +2,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  background-color: white;
-  color: black;
+  background-color: #952f8a;
+  color: white;
 }
 body {
 	font-family: Arial;
 	font-size: 16px;
 	line-height: 1.5;
-	background-color: ;
-	color: #333333;
+	/* background-color: ; */
+	color: white;
 }
 /* NAV BAR */
 .navbar{
@@ -100,7 +100,7 @@ img {
   opacity: 1;
   font-size: 1.8em;
   font-weight: 300;
-  color: black;
+  color: white;
   width: 90%;
   margin: 10px auto 0px;
   border-bottom: 0;
@@ -113,12 +113,11 @@ img {
 }
 
 .about p {
-  color: rgb(35, 33, 59);
+  color: white;
   /* padding-bottom: 20px; */
 }
 
 .about figure {
-  /* border: 1px solid black; */
   padding: 15px;
   margin: 30px auto;
 }
