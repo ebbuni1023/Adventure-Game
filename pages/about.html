@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Adventure Game Map</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="about.css">
+
 </head>
 <body>
 <header>
@@ -22,10 +24,37 @@
 
 <h1 id="title"></h1>
 
-<script>
-    const urlSearchParams = new URLSearchParams(window.location.search);
-const params = Object.fromEntries(urlSearchParams.entries());
-document.getElementById("title").innerText = `Looks like you are in ${params['s']}`
-</script>
+<div class="about">
+    <h1>Our Team</h1>
+    <p>Who we are</p>
+  </div>
+  <section class="container about">
+    <figure>
+      <div class="layer">
+        <h3>Developer</h3>
+        <p>I made a pictures and Things to do page</p>
+      </div>
+      <img src="../images/jiyoung.jpeg" alt="">
+      <figcaption>
+        <h3>Jiyoung Yoon</h3>
+        <br>
+        <!-- <a href="#" class="fa fa-linkedin fa-2x"></a> -->
+      </figcaption>
+    </figure>
+  
+    <figure>
+      <div class="layer">
+        <h3>Developer</h3>
+        <p>I made a main page</p>
+      </div>
+      <img src="../images/bw.jpeg" alt="">
+      <figcaption>
+        <h3>Sathwik Chowda</h3>
+        <br>
+        <!-- <a href="#" class="fa fa-linkedin fa-2x"></a> -->
+      </figcaption>
+    </figure>
+  
+  </section>
 </body>
 </html>
